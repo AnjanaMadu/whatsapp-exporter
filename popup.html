@@ -1,0 +1,79 @@
+<html>
+  <style>
+    .container {
+      width: 300px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p {
+      font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto,
+        sans-serif;
+      font-size: 16px;
+      color: #333;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* CSS */
+    button {
+      background-color: #c2fbd7;
+      border-radius: 100px;
+      box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+        rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+        rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+        rgba(44, 187, 99, 0.15) 0 16px 32px;
+      color: green;
+      cursor: pointer;
+      display: inline-block;
+      font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto,
+        sans-serif;
+      padding: 7px 20px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 250ms;
+      border: 0;
+      font-size: 16px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    button:hover {
+      box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+        rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+        rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+        rgba(44, 187, 99, 0.25) 0 16px 32px;
+      transform: scale(1.05) rotate(-1deg);
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>WhatsApp Exporter</h1>
+      <p class="text-center">
+        Click the button below to export your contacts in this chat to a text file.
+      </p>
+
+      <div style="padding-top: 10px; padding-left: 10px; padding-right: 10px;">
+        <p>
+          Chat Name: <span id="name"></span>
+        </p>
+        <p>
+          Contact Count: <span id="count"></span>
+        </p>
+      </div>
+
+        <button id="export">Export!</button>
+        <script src="popup.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
